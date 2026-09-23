@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pymongo-search-utils
-  version: 0.3.0
+  version: "0.3.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/pymongo_search_utils/pymongo_search_utils-${{ version }}.tar.gz
-  sha256: 56148987ce9ff191eb1cd0f56c01d3dae497a3cb6d7b7db75ec894a9afcbe418
+  sha256: df59fcf3e2a7b2d84efc3f66f22da4a8cbb1a9419fd90616dddad5d69c9d341d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
